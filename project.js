@@ -66,3 +66,4 @@ updateStudent(1, 'Charlie', 78);
 displayStudents();
 deleteStudent(0);
 displayStudents();
+// 다시하고싶은데 ㅜㅠㅠ
