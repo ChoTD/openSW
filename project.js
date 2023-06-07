@@ -38,7 +38,3 @@ function ReadStudent() {
     });
   }
 }
-// 학생 성적 관리 예시
-CreateStudent("조수연", "오픈소프트웨어", "A");
-CreateStudent("이유진", "소프트웨어기초프로젝트", "A");
-ReadStudent();
