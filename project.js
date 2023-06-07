@@ -26,3 +26,15 @@ function DeleteStudent(index) {
   grades.splice(index, 1);
   SaveGrades();
 }
+
+//검색 기능
+function ReadStudent() {
+  if (grades.length === 0) {
+    console.log("학생 정보가 없습니다.");
+  } else {
+    console.log("=======성적 관리=======");
+    grades.forEach((grade, index) => {
+      console.log(`번호: ${index}\n 이름: ${grade. name}\n 과목: ${grade.subject}\n 점수: ${grade.score}`);
+    });
+  }
+}
