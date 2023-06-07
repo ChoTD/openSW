@@ -58,11 +58,4 @@ function deleteStudent(index) {
 }
 
 // 예시 사용
-addStudent('Alice', 85);
-addStudent('Bob', 92);
-displayStudents();
-displayStudent(0);
-updateStudent(1, 'Charlie', 78);
-displayStudents();
-deleteStudent(0);
-displayStudents();
+// 다시할래
