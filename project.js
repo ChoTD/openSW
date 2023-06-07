@@ -1,17 +1,20 @@
-let students = []; // 성적 데이터를 저장할 배열
+const grades = JSON.parse(localStorage.getItem('grades')) || [];
 
-// 성적 객체 생성자 함수
-function Student(name, score) {
-  this.name = name;
-  this.score = score;
+function SaveGrades() {
+  localStorage.setItem('grades', JSON.stringify(grades));
 }
 
-// 성적 추가
-function addStudent(name, score) {
-  const student = new Student(name, score);
-  students.push(student);
-  console.log('성적이 추가되었습니다.');
+//학생 성적관리 시스템 생성
+function CreateStudent(name, subject, score) {
+  const grade = {
+    name,
+    subject,
+    score
+  };
+  grades.push(grade);
+  SaveGrades();
 }
+<<<<<<< HEAD
 
 // 모든 성적 조회
 function displayStudents() {
@@ -59,3 +62,5 @@ function deleteStudent(index) {
 
 // 예시 사용
 // 다시할래
+=======
+>>>>>>> origin/master
