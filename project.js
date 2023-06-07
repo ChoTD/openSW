@@ -14,3 +14,15 @@ function CreateStudent(name, subject, score) {
   grades.push(grade);
   SaveGrades();
 }
+
+//업데이트 기능 
+function UpdateStudent(index, UpdateStudent) {
+  grades[index] = UpdateStudent;
+  SaveGrades();
+}
+
+//삭제 기능
+function DeleteStudent(index) {
+  grades.splice(index, 1);
+  SaveGrades();
+}
